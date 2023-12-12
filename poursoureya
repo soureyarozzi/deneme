@@ -1,0 +1,5 @@
+ var y = k.Yazarlar.ToList();//bu sekilde tum yazarlari almis oluruz
+ var y1 = from yazar in k.Yazarlar
+          where yazar.YazarID == 1
+          select yazar;
+ return View(y);
